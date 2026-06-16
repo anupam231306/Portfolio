@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/anupamupadhyay/Desktop/practical/fcfs_practical'
+relocations:     []
+...
