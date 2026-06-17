@@ -28,6 +28,8 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 #loader{
@@ -653,7 +655,7 @@ span {
     align-items: stretch;
     gap: 40px;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     margin-top: 50px;
     flex-direction: row;
     
@@ -776,7 +778,8 @@ span {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 .contact input,
 .contact textarea{
@@ -798,7 +801,8 @@ span {
     border-radius: 1.5rem;
     height: fit-content;
     align-self: start;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
 }
 .contact-info p{
     margin: 1.5rem 0;
@@ -863,4 +867,82 @@ span {
     .about img { width: 70vw; margin-bottom: 4rem; }
     .projects-container { grid-template-columns: 1fr; }
     .contact form .input-box input { width: 100%; }
+}
+@media (max-width:768px){
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-content h1{
+        font-size: 4rem;
+    }
+
+    .hero-content h3{
+        font-size: 2.5rem;
+    }
+
+    .hero-img img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content{
+        width: 100%;
+    }
+
+    .about-content h2{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 280px;
+    }
+
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box{
+        width: 100%;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact form,
+    .contact-info{
+        width: 100%;
+    }
+
+    .stats-container{
+        grid-template-columns: 1fr;
+    }
 }
