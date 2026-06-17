@@ -840,14 +840,18 @@ span {
 }
 
 @media (max-width: 768px) {
-    .menu-toggle { display: block; }
+    .menu-toggle { display: block;
+                   font-size: 30px;
+                   color: white;
+                   cursor: pointer;
+                 }
     .nav-links {
         position: absolute;
-        top: 100%;
+        top: 70%;
         left: 0;
         width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
+        padding: 15px 0;
+        background: #0B0F14;
         flex-direction: column;
         border-top: .1rem solid rgba(0,0,0,.1);
         display: none; /* Hidden by default on mobile */
@@ -858,7 +862,8 @@ span {
     }
 
     .nav-links li {
-        margin: 1.5rem 0;
+        margin: 15px 0;
+        text-align: center;
     }
 
     .hero { flex-direction: column-reverse; }
